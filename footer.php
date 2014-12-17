@@ -15,7 +15,7 @@
 	<div id="footer-area">
 		<div class="container footer-inner">
 			<div class="row">
-				<?php get_sidebar( 'footer' ); ?>
+				<?php /*get_sidebar( 'footer' );*/ ?>
 			</div>
 		</div>
 

@@ -25,7 +25,7 @@ get_header(); ?>
 						<?php /*edit_post_link( __( 'Edit', 'sparkling' ), '<footer class="entry-meta"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); */?>
 					</article><!-- #post-## -->
 
-					<?php get_sidebar( 'home' ); ?>
+					<?php /*get_sidebar( 'home' );*/ ?>
 
 					<?php
 					/*
