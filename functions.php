@@ -8,6 +8,8 @@
 	/*
 		GSN
 	*/ 
+	add_filter( 'wp_list_pages', 'gsn_get_featured_recipe' );
+	
  	function split_content() {
 
 		global $more;

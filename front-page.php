@@ -15,6 +15,11 @@ get_header(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<div class="entry-content">
 							<?php the_content(); ?>
+							
+							<!--test-->
+							<img src='<?php wp_list_pages('sort_column=menu_order'); ?>'/>
+							<!--test-->
+							
 							<?php
 								wp_link_pages( array(
 									'before' => '<div class="page-links">' . __( 'Pages:', 'sparkling' ),
