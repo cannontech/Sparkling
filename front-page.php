@@ -27,20 +27,9 @@ get_header(); ?>
 								) );
 							?>
 						</div><!-- .entry-content -->
-						<?php /*edit_post_link( __( 'Edit', 'sparkling' ), '<footer class="entry-meta"><i class="fa fa-pencil-square-o"></i><span class="edit-link">', '</span></footer>' ); */?>
 					</article><!-- #post-## -->
 
 					<?php /*get_sidebar( 'home' );*/ ?>
-
-					<?php
-					/*
-						// If comments are open or we have at least one comment, load up the comment template
-						if ( comments_open() || '0' != get_comments_number() ) :
-							comments_template();
-						endif;
-					*/			
-					?>
-
 				<?php endwhile; // end of the loop. ?>
 			</div>
 		</main><!-- #main -->

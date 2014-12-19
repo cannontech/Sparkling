@@ -24,11 +24,29 @@
 				<div class="row">
 					<?php sparkling_social(); ?>
 					<nav role="navigation" class="col-md-6">
-						<?php sparkling_footer_links(); ?>
+						<?php /*sparkling_footer_links(); */?>
 					</nav>
 					<div class="copyright col-md-6">
-						<?php echo of_get_option( 'custom_footer_text', 'sparkling' ); ?>
-						<?php sparkling_footer_info(); ?>
+						<div>Store: 
+						<?php 
+							if ( false === ( $value = get_transient( 'store_list' ) ) ) {
+								//this code runs when there is no valid transient set
+								$tmp = apply_filters('gsn_get_featured_recipe', $v);
+							} 
+							$tmp = json_decode(get_transient( 'store_list' ));
+							echo $tmp[0]->{'StoreName'};
+							echo ' ';
+							if ( false === ( $value = get_transient( 'site_config' ) ) ) {
+								// this code runs when there is no valid transient set
+								$tmp2 = apply_filters('gsn_get_site_config', $v);
+							} 
+							$tmp2 = json_decode(get_transient( 'site_config'), true);
+							echo $tmp2['GoogleSiteSearchCode'];
+							//var_dump($tmp2);
+						?>
+						</div>
+						<?php /*echo of_get_option( 'custom_footer_text', 'sparkling' ); */ ?>
+						<?php /*sparkling_footer_info(); */ ?>
 					</div>
 				</div>
 			</div><!-- .site-info -->
